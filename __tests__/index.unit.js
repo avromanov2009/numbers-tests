@@ -17,6 +17,14 @@ describe("Index testing", () => {
     expect(runTask([1, 2, 4, 5])).toBe(3);
   });
 
+  describe("Negatives...", () => {
+    it("should throw exception if sum of elements more then safe integer", () => {
+      expect(() => runTask([Number.MAX_VALUE, 1])).toThrowError(
+        "Sum overflow of integer type"
+      );
+    });
+  });
+
   describe("Sub-module: summ array elements", () => {
     it("should be 15 on [1, 2, 3, 4, 5]", () => {
       expect(sumPositiveElementsOfArray([1, 2, 3, 4, 5])).toBe(15);

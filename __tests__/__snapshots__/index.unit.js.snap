@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index testing Negatives... should throw exception if sum of elements more then safe integer 1`] = `[Function]`;
